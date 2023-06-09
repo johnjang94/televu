@@ -1,0 +1,692 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER DECORATION ====== */
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+
+  margin: 50px 60px 0 60px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+button {
+  font-size: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  margin-top: 20px;
+}
+
+button:hover {
+  color: rgb(32, 98, 178);
+  cursor: pointer;
+  text-shadow: #b3e0fefd;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-nav a:hover {
+  color: blue;
+}
+
+/* <<<<<< TOP-NAVIGATION SETTING >>>>>>>>> */
+
+@media (min-width: 769px) and (max-width: 1600px) {
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: none;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #navlinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-nav {
+    display: none;
+  }
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: block;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+  }
+
+  .x-button {
+    display: none;
+
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+
+    margin-left: 407px;
+  }
+
+  .image-column {
+    background-color: white;
+  }
+
+  .topnav #nav-links {
+    display: none;
+
+    cursor: pointer;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    font-size: 15px;
+
+    color: white;
+    width: 600px;
+    height: 50px;
+
+    padding: 10px 7px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+@media (max-width: 330px) {
+  #main-nav {
+    display: none;
+  }
+
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: block;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+    margin-left: 200px;
+  }
+
+  .x-button {
+    display: none;
+
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+
+    margin-left: 200px;
+  }
+
+  .image-column {
+    background-color: white;
+  }
+
+  .topnav #nav-links {
+    display: none;
+
+    cursor: pointer;
+  }
+
+  .topnav a {
+    display: block;
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+    padding: 10px 7px;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ============ MAIN CONTENT ================= */
+h1 {
+  position: relative;
+
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+
+  margin-top: 161px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-left: 251px;
+}
+
+h4 {
+  position: absolute;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+p,
+li {
+  width: 808px;
+
+  margin-left: 251px;
+}
+
+li {
+  margin-top: 10px;
+}
+
+span {
+  margin-left: 251px;
+}
+
+/* ================ RESEARCH INTRODUCTION SETTING ================= */
+.difficulties {
+  margin-top: 75px;
+}
+
+/* SETTING FOR PICTURES */
+.assumption {
+  width: 470px;
+  height: auto;
+
+  margin-top: 15px;
+  margin-left: 251px;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================ THE FLIP CARD ================= */
+/* FLIP CARD CONTAINER */
+.flip-card1 {
+  font-size: 20px;
+
+  background-color: transparent;
+
+  width: 370px;
+  height: 240px;
+
+  position: absolute;
+
+  margin-top: -240px;
+  margin-left: 750px;
+
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front1,
+.flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back1 {
+  background-color: #f5f5f5;
+  color: white;
+  transform: rotateY(180deg);
+
+  width: 370px;
+
+  margin-left: 0px;
+}
+
+.content {
+  width: 350px;
+  color: black;
+
+  padding: 10px 30px 0 30px;
+
+  margin-left: 0px;
+}
+
+.interactivity {
+  color: black;
+  width: 300px;
+  padding: 30px 30px 0 30px;
+
+  margin-left: 0px;
+}
+
+/* INDIVIDUAL SETTING */
+.about {
+  text-align: center;
+  margin-top: 110px;
+  margin-left: -220px;
+}
+
+/* ================ AFTER RESEARCH ================= */
+.after {
+  width: 340px;
+
+  margin-top: -260px;
+  margin-left: 640px;
+}
+
+.insights {
+  padding-top: 100px;
+}
+
+.mirotag {
+  margin-top: 50px;
+}
+
+.miro {
+  width: 800px;
+  height: auto;
+
+  margin-top: -10px;
+  margin-left: 251px;
+}
+
+.map {
+  width: 340px;
+  height: auto;
+
+  margin-top: -20px;
+  margin-left: 251px;
+}
+
+/* ================ INSIGHTS ================= */
+.picture {
+  width: 800px;
+  height: auto;
+
+  margin-top: 5px;
+  margin-left: 251px;
+}
+
+/* ================ MORE INFO DECORATIONS ================= */
+button {
+  position: absolute;
+
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+  background-color: rgba(217, 217, 217, 0.13);
+  border: 1px solid grey;
+  border-radius: 15px;
+
+  width: 100px;
+  height: 28px;
+
+  padding: 5px;
+
+  margin-top: -527px;
+  margin-left: 950px;
+}
+
+button:hover {
+  background-color: #b9edf9;
+  cursor: pointer;
+}
+
+/* ================ MORE INFO DECORATIONS - INDIVIDUAL ================= */
+.info {
+  width: fit-content;
+  margin: -45px 0 0 -115px;
+}
+
+.info2 {
+  width: fit-content;
+  margin: -30px 0 0 -115px;
+}
+
+.info3 {
+  width: fit-content;
+  margin: -50px 0 0 -115px;
+}
+
+.info4 {
+  width: fit-content;
+  margin: -45px 0 0 -115px;
+}
+
+/* ================ MORE INFORMATION DETAIL IN POP-UP WINDOWS ================ */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 5px; /* Location of the box */
+  left: 260px;
+  top: 100px;
+  width: 56%; /* 56% width */
+  height: 57%; /* 57% height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 92%;
+  height: 80%;
+  padding: 10px;
+
+  margin: 30px 0 0 30px;
+
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  background-color: #13abce;
+  color: white;
+  cursor: pointer;
+
+  border-radius: 500px;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.learned1 {
+  font-weight: bold;
+
+  margin-left: 0px;
+}
+
+.lesson1 {
+  width: 650px;
+
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* ================= USER PERSONAL & USER JOURNEY MAP ================== */
+/* User Persona */
+.persona {
+  width: 400px;
+  height: auto;
+
+  margin-top: 82px;
+  margin-left: 251px;
+
+  cursor: pointer;
+}
+
+.persona:hover {
+  border: #9addfb 2px solid;
+}
+
+.personaTag {
+  margin-left: 410px;
+}
+
+.journeymap {
+  position: absolute;
+  transform-origin: right;
+
+  width: 400px;
+  height: auto;
+
+  margin-top: -285px;
+  margin-left: 150px;
+
+  cursor: pointer;
+}
+
+.journeymap:hover {
+  border: #9addfb 2px solid;
+}
+
+.journeymapTag {
+  position: absolute;
+
+  margin-top: -15px;
+  margin-left: 790px;
+}
+
+/* ================ PORTFOLIO MENU SETTING ================= */
+.alignment {
+  display: flex;
+
+  margin: 0 250px 0 250px;
+}
+
+.card {
+  width: 377.51px;
+  height: 447px;
+
+  margin: 50px 0 0 40px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card div {
+  text-align: center;
+
+  height: 146px;
+  background-color: #fafafa;
+
+  margin-top: -16px;
+}
+
+.card div:hover {
+  background-color: #9addfb;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-picture {
+  width: 377.51px;
+  height: 314px;
+}
+
+.menu-center {
+  padding: 30px 0 0 0;
+  margin: 0 0 0 -40px;
+}
+
+.menu-center2 {
+  width: 300px;
+  padding: 20px;
+  margin: 0 0 0 10px;
+}
+
+/* ================ MENU CARD SETTING ================= */
+footer {
+  text-align: center;
+  color: white;
+
+  margin: 50px 0 0 0;
+}
+
+footer p {
+  z-index: 1000;
+}
+
+.name {
+  padding: 40px 0 0 0;
+}
+
+.copyright {
+  color: aqua;
+}
+
+footer img {
+  position: absolute;
+
+  width: 1470px;
+  height: 200px;
+
+  z-index: -1000;
+  margin: 0 0 0 -750px;
+}

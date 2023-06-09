@@ -1,0 +1,448 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER DECORATION ====== */
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+
+  margin: 50px 60px 0 60px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+button {
+  font-size: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  margin-top: 20px;
+}
+
+button:hover {
+  color: rgb(32, 98, 178);
+  cursor: pointer;
+  text-shadow: #b3e0fefd;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-nav a:hover {
+  color: blue;
+}
+
+/* <<<<<< TOP-NAVIGATION SETTING >>>>>>>>> */
+
+@media (min-width: 769px) and (max-width: 1600px) {
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: none;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #navlinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-nav {
+    display: none;
+  }
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: block;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+  }
+
+  .x-button {
+    display: none;
+
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+
+    margin-left: 407px;
+  }
+
+  .image-column {
+    background-color: white;
+  }
+
+  .topnav #nav-links {
+    display: none;
+
+    cursor: pointer;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    font-size: 15px;
+
+    color: white;
+    width: 600px;
+    height: 50px;
+
+    padding: 10px 7px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+@media (max-width: 330px) {
+  #main-nav {
+    display: none;
+  }
+
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: block;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+    margin-left: 200px;
+  }
+
+  .x-button {
+    display: none;
+
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+
+    margin-left: 200px;
+  }
+
+  .image-column {
+    background-color: white;
+  }
+
+  .topnav #nav-links {
+    display: none;
+
+    cursor: pointer;
+  }
+
+  .topnav a {
+    display: block;
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+    padding: 10px 7px;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* =========== MAIN CONTENT ================ */
+h1 {
+  position: relative;
+
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+
+  margin-top: 161px;
+}
+
+h3 {
+  position: absolute;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-top: 25px;
+  margin-left: 141.82px;
+}
+
+h4 {
+  margin-left: 251px;
+}
+
+p,
+li {
+  width: 808px;
+
+  margin-left: 251px;
+}
+
+li {
+  margin-top: 10px;
+}
+
+/* ================ NAVIGATION SETTING ================= */
+.navigation {
+  width: fit-content;
+
+  margin-left: 0px;
+}
+
+.floating-menu {
+  background: #add8e6;
+  border-radius: 15px;
+
+  width: 100px;
+  position: fixed;
+  opacity: 1;
+  z-index: 100;
+
+  padding: 3px;
+
+  margin-top: 100px;
+  margin-left: -142px;
+}
+
+.floating-menu:hover {
+  box-shadow: 0 5px 5px 5px rgba(173, 216, 230, 0.8);
+  opacity: 1;
+  transition-duration: 1s ease-in-and-out;
+
+  margin-left: -50px;
+}
+
+.floating-menu a,
+.floating-menu p {
+  color: black;
+  display: block;
+  font-size: 0.9em;
+  width: 140px;
+
+  padding-block: 3px;
+  margin: 0px;
+}
+
+.floating-menu p {
+  margin-left: 10px;
+}
+
+.linksize {
+  width: fit-content;
+
+  padding-left: 30px;
+}
+
+.linksize:hover {
+  color: white;
+}
+
+/*  ============== REFLECTION =============== */
+.points {
+  margin-top: -5px;
+  margin-left: 280px;
+}
+
+.details {
+  width: 800px;
+
+  margin-top: 40px;
+  margin-left: 280px;
+}
+
+/* ================ PORTFOLIO MENU SETTING ================= */
+a {
+  color: black;
+}
+
+/* ================ PORTFOLIO MENU SETTING ================= */
+.introduction {
+  margin-left: 130px;
+}
+
+/* ================ RESEARCH CARD SETTING ================= */
+.research {
+  width: 377.51px;
+  height: 447px;
+
+  margin-top: 131px;
+  margin-left: 251px;
+}
+
+.picture {
+  width: 377.51px;
+  height: 314px;
+
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.box {
+  height: 146px;
+
+  background-color: #fafafa;
+
+  margin-top: -16px;
+}
+
+.box:hover {
+  background-color: #9addfb;
+  transition: 0.5s ease-in-out;
+}
+
+.word {
+  position: absolute;
+
+  width: 316px;
+
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+/* ================ DESIGN CARD SETTING ================= */
+.design {
+  margin-top: -447px;
+  margin-left: 655px;
+}
+
+/* ================ USABILITY CARD SETTING ================= */
+.usability {
+  margin-top: 25px;
+  margin-left: 251px;
+}
+
+.testing {
+  margin-left: 155px;
+}
+
+.reflection {
+  margin-top: -448px;
+  margin-left: 655px;
+}
+
+.test {
+  margin-top: 25px;
+  margin-left: 115px;
+}
+
+/* ================ MENU CARD SETTING ================= */
+footer {
+  text-align: center;
+  color: white;
+
+  margin: 50px 0 0 0;
+}
+
+footer p {
+  z-index: 1000;
+}
+
+.name {
+  padding: 40px 0 0 0;
+}
+
+.copyright {
+  color: aqua;
+}
+
+footer img {
+  position: absolute;
+
+  width: 1470px;
+  height: 200px;
+
+  z-index: -1000;
+  margin: 0 0 0 -750px;
+}

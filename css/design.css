@@ -1,0 +1,445 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER DECORATION ====== */
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  position: static;
+
+  margin: 50px 60px 0 60px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+button {
+  font-size: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  margin-top: 20px;
+}
+
+button:hover {
+  color: rgb(32, 98, 178);
+  cursor: pointer;
+  text-shadow: #b3e0fefd;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-nav a:hover {
+  color: blue;
+}
+
+/* <<<<<< TOP-NAVIGATION SETTING >>>>>>>>> */
+
+@media (min-width: 769px) and (max-width: 1600px) {
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: none;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #navlinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-nav {
+    display: none;
+  }
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: block;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+  }
+
+  .x-button {
+    display: none;
+
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+
+    margin-left: 407px;
+  }
+
+  .image-column {
+    background-color: white;
+  }
+
+  .topnav #nav-links {
+    display: none;
+
+    cursor: pointer;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    font-size: 15px;
+
+    color: white;
+    width: 600px;
+    height: 50px;
+
+    padding: 10px 7px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+@media (max-width: 330px) {
+  #main-nav {
+    display: none;
+  }
+
+  /* ===== NAVIGATION IN MOBILE ENVIRONMENT ====== */
+  .topnav {
+    display: block;
+
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+    margin-left: 200px;
+  }
+
+  .x-button {
+    display: none;
+
+    width: 70px;
+    height: 50px;
+
+    cursor: pointer;
+
+    margin-left: 200px;
+  }
+
+  .image-column {
+    background-color: white;
+  }
+
+  .topnav #nav-links {
+    display: none;
+
+    cursor: pointer;
+  }
+
+  .topnav a {
+    display: block;
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+    padding: 10px 7px;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+span {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ========= DOCUMENT COMMON SETTING ============ */
+h1 {
+  position: relative;
+
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+
+  margin-top: 161px;
+}
+
+h3 {
+  position: absolute;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-top: 25px;
+  margin-left: 141.82px;
+}
+
+h4 {
+  margin-left: 251px;
+}
+
+p,
+li {
+  width: 808px;
+
+  margin-left: 251px;
+}
+
+li {
+  margin-top: 10px;
+}
+
+/* ================ DESIGN SETTING ================= */
+.consideration {
+  margin-left: 251px;
+}
+
+.point {
+  margin-top: 103px;
+}
+
+.detail {
+  margin-left: 270px;
+}
+
+.points {
+  margin-top: 85px;
+}
+
+.indent {
+  margin-left: 220px;
+}
+
+.indentTag {
+  margin-left: 300px;
+}
+
+.buttonTag {
+  margin-left: 110px;
+}
+
+.colourTag {
+  margin-left: 100px;
+}
+
+/* ================ DRAFTS SETTING ================= */
+.visual {
+  margin-top: 94px;
+}
+
+.process {
+  margin-top: 130px;
+}
+
+.changes {
+  width: 800px;
+  height: auto;
+
+  margin-top: -10px;
+  margin-left: 251px;
+}
+
+.changes1 {
+  width: 800px;
+  height: auto;
+
+  margin-top: 5px;
+  margin-left: 251px;
+}
+
+/* ================ FINALIZATION SETTING ================= */
+/* MOBILE */
+.portrait {
+  margin-top: 60px;
+  margin-left: 251px;
+}
+
+.landscape {
+  position: absolute;
+  width: 520px;
+  height: auto;
+
+  margin-top: 220px;
+  margin-left: 20px;
+}
+
+.portraitTag {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 320px;
+}
+
+.landscapeTag {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+
+  margin-top: -190px;
+  margin-left: 230px;
+}
+
+/* ================ PORTFOLIO MENU SETTING ================= */
+.alignment {
+  display: flex;
+
+  margin: 0 250px 0 250px;
+}
+
+.card {
+  width: 377.51px;
+  height: 447px;
+
+  margin: 50px 0 0 40px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card div {
+  display: block;
+
+  height: 146px;
+  background-color: #fafafa;
+
+  margin-top: -16px;
+}
+
+.card div:hover {
+  background-color: #9addfb;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-picture {
+  width: 377.51px;
+  height: 314px;
+}
+
+.menu-center {
+  position: absolute;
+
+  padding: 10px 0 0 0;
+  margin: 10px 30px 50px 140px;
+}
+
+.menu-center2 {
+  position: absolute;
+
+  width: 300px;
+  padding: 65px 0 0 20px;
+  margin: 0 0 0 10px;
+}
+
+/* ================ MENU CARD SETTING ================= */
+footer {
+  text-align: center;
+  color: white;
+
+  margin: 50px 0 0 0;
+}
+
+footer p {
+  z-index: 1000;
+}
+
+.name {
+  padding: 40px 0 0 0;
+}
+
+.copyright {
+  color: aqua;
+}
+
+footer img {
+  position: absolute;
+
+  width: 1470px;
+  height: 200px;
+
+  z-index: -1000;
+  margin: 0 0 0 -750px;
+}
